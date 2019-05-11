@@ -38,4 +38,11 @@ class cart{
       $_SESSION['panier'][$id_produit]['prix_Total'] = $_SESSION['panier'][$id_produit]['qte'] * $_SESSION['panier'][$id_produit]['prix_unitaire'];
     }
   }
-  
+  public function updateQteProduct($id_produit,$qte=0){
+    if(isset($_SESSION['panier'][$id_produit])){
+      $_SESSION['panier'][$id_produit]['qte'] = $qte;
+      $this->updateTotalPriceProduct($id_produit);
+    }else{
+      return "ERREUR : produit non présent dans le panier"; 
+    }
+  }
