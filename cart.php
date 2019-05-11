@@ -15,3 +15,6 @@ class cart{
     }
     $this->initCart();
   }
+  public function initCart(){
+    $_SESSION['panier'] = array(); 
+  }
