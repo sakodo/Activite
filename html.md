@@ -4,8 +4,13 @@
   <title>Ma première page avec du style</title>
   <style type="text/css">
   body {
+    font-family: Georgia, "Times New Roman",
+          Times, serif;
     color: purple;
     background-color: #d8da3d }
+  h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif }
   </style>
 </head>
 
