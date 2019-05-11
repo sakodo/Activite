@@ -2,6 +2,11 @@
 <html>
 <head>
   <title>Ma première page avec du style</title>
+  <style type="text/css">
+  body {
+    color: purple;
+    background-color: #d8da3d }
+  </style>
 </head>
 
 <body>
