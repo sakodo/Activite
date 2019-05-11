@@ -18,3 +18,6 @@ class cart{
   public function initCart(){
     $_SESSION['panier'] = array(); 
   }
+  public function getList(){
+    return !empty($_SESSION['panier']) ? $_SESSION['panier'] : NULL;
+
